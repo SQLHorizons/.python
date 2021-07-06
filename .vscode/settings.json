@@ -1,0 +1,9 @@
+{
+    "editor.minimap.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "git.branchWhitespaceChar": "-"
+}

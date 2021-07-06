@@ -1,0 +1,27 @@
+image:
+  file: .gitpod.dockerfile
+
+vscode:
+  extensions:
+    - ms-python.python
+    - davidanson.vscode-markdownlint
+    - github.vscode-pull-request-github
+    - mhutchie.git-graph
+    - ms-azuretools.vscode-docker
+    - vscode-icons-team.vscode-icons
+    - ms-ceintl.vscode-language-pack-en-gb
+    - pmbenjamin.vscode-snyk
+
+gitConfig:
+  user.email: sqlhorizons@users.noreply.github.com
+
+tasks:
+  - before: sed -i 's/en-US/en-GB/g' /ide/manifest.json
+    init: |
+      gp env LANG=en_US.UTF-8
+  - name: workspace
+    env:
+      DB_HOST: localhost:5432
+      DB_USER: readOnlyUser
+
+workspaceLocation: ".python"
